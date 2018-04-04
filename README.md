@@ -1,10 +1,14 @@
 # Truffle-React-Redux
 
-The `truffle-react-redux` provide the template(box) for your next dapp with React and Redux. The project have preconfigured React and Redux basic settings. The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
+The `truffle-react-redux` provide the template(box) for your next dapp with React and Redux. The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
 
-* `contracts/` This project was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command
-* `web/` This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-* glue scripts: help manage `contracts` and  `web` sub projects by install dependency modules and copy compiled JSON into `web/` project.
+The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
+
+The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folder.
+
+The glue scripts also help manage `contracts` and  `web` sub projects by install dependency modules and copy compiled JSON into `web/src/lib` for accessing contracts.
 
 ## Installation
 
@@ -65,8 +69,6 @@ npm run deploy
   npm run test
   ```
 
-
-
 ## Web development
 
 Enter `web/` folder
@@ -91,7 +93,7 @@ npm run test
 
 ## Dependencies
 
-### whole project
+### Whole project
 
 * [lerna](https://github.com/lerna/lerna#bootstrap) Manage `contracts/` and `web/` project.
 
@@ -103,7 +105,7 @@ npm run test
 | start        | Runs the web dapp in the development mode |
 | publish   | pump sub project packages version |
 
-### contracts sub project
+### Contracts sub project
 
 * [truffle](http://truffleframework.com/): Build, debug, deploy the smart contracts
 
@@ -114,10 +116,10 @@ npm run test
 
 Read more in http://truffleframework.com/docs/
 
-### web sub project
+### Web sub project
 
 * [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration
-* redux & react-redux: State management
+* Redux & react-redux: State management
 
 | command | description |
 |-------------|---------------|
