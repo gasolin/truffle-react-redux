@@ -1,13 +1,12 @@
 # Truffle-Contracts-Web-DApp
 
-The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern of contracts and web frontend and include the glue scripts to bridge both sides.
+The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern and the dependencies of `contracts` and `web` frontend, and include the glue scripts to bridge both sides.
 
 * `contracts/` This project was bootstrapped with `truffle init`
 * `web/` This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
+* glue scripts: help install dependency modules at once, help copy JSON abi from `contracts/` to `web/` project.
 
 ## Installation
-
 
 1. Install Truffle globally.
     ```sh
@@ -18,6 +17,17 @@ The `truffle-contracts-web-dapp` provide the template for your next dapp. It sep
     ```sh
     truffle unbox gasolin/truffle-contracts-web-dapp
     ```
+
+3. Glue script allow you to install `contracts/` and `web/` project dependencies at once via [lerna](https://github.com/lerna/lerna)
+
+    ```sh
+    npm run bootstrap
+
+    # or you can install dependency modules via separate command
+    $ cd contracts && npm install
+    $ cd ../web && npm install
+    ```
+
 
 ## Contracts development
 

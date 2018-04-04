@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna publish"
+  },
+	"devDependencies": {
+		"lerna": "^2.9.1"
+	}
+}
