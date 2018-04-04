@@ -2,7 +2,8 @@
   "ignore": [
     "README.md",
     ".gitignore",
-    "renovate.json"
+    "renovate.json",
+    "truffle.js"
   ],
   "commands": {
     "bootstrap contracts and web": "npm run bootstrap",
