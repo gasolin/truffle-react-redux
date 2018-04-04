@@ -19,7 +19,7 @@ exports[`render correctly with web3 connection 1`] = `
   <h1
     className="App-title"
   >
-    Not connected to the blockchain
+    Not connect to the blockchain
   </h1>
 </header>
 `;
