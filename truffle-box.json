@@ -9,6 +9,6 @@
     "pump packages version": "npm run publish"
   },
   "hooks": {
-    "post-unpack": ""
+    "post-unpack": "npm install && npm run bootstrap"
   }
 }
