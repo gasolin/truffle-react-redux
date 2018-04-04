@@ -8,9 +8,9 @@ The `truffle-contracts-web-dapp` provide the template for your next dapp. It sep
 
 ## Installation
 
-1. Install Truffle globally.
+1. Install Truffle and lerna globally.
     ```sh
-    npm install -g truffle
+    npm install -g truffle lerna
     ```
 
 2. Download the box. This also takes care of installing the necessary dependencies.
@@ -18,7 +18,7 @@ The `truffle-contracts-web-dapp` provide the template for your next dapp. It sep
     truffle unbox gasolin/truffle-contracts-web-dapp
     ```
 
-3. Glue script allow you to install `contracts/` and `web/` project dependencies at once via [lerna](https://github.com/lerna/lerna)
+3. Glue script allow you to install `contracts/` and `web/` project dependencies at once via [lerna bootstrap](https://github.com/lerna/lerna#bootstrap)
 
     ```sh
     npm run bootstrap

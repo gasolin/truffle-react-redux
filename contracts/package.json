@@ -5,6 +5,7 @@
     "scripts": {
       "build": "truffle compile && shx cp -R build/contracts* ../web/src/lib",
       "deploy": "npm run build && truffle migrate",
+      "prepare": "npm run build",
       "test": "truffle test"
     },
     "dependencies": {
