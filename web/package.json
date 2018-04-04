@@ -1,6 +1,7 @@
 {
-  "name": "web",
+  "name": "truffle-react-redux-dapp",
   "version": "0.1.0",
+  "description": "truffle dapp with react/redux",
   "private": true,
   "dependencies": {
     "react": "^16.3.1",

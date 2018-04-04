@@ -1,17 +1,80 @@
-# Blueprint Truffle Box
+# Truffle-Contracts-Web-DApp
 
-This box comes with everything you need to create your own Truffle Box.
+The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern of contracts and web frontend and include the glue scripts to bridge both sides.
 
-## Getting Started
+* `contracts/` This project was bootstrapped with `truffle init`
+* `web/` This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-After adding your libraries and code:
 
-1. Delete `box-img-sm.png` and `box-img-lg.png`.
+## Installation
 
-2. Use `box-img-sm-template.png` and `box-img-lg-template.png` to create your own art.
 
-3. Delete the template images and replace them with your art. Be sure your art's filenames don't have -template in them.
+1. Install Truffle globally.
+    ```sh
+    npm install -g truffle
+    ```
 
-4. Customize the box configuration file (`box-config.json`) if necessary.
+2. Download the box. This also takes care of installing the necessary dependencies.
+    ```sh
+    truffle unbox gasolin/truffle-contracts-web-dapp
+    ```
 
-See [the Truffle Box section of our documentation](http://truffleframework.com/) for more info.
+## Contracts development
+
+Enter `contracts/` folder
+
+1. Run the development console.
+    ```sh
+    truffle develop
+    ```
+
+2. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`. Smart contract changes must be manually recompiled and migrated.
+    ```sh
+    compile
+    migrate
+
+    # If outside the development console..
+    npm run build
+    ```
+
+3. Glue scripts can copy compiled JSON files into `web/src/lib` to access contract.
+
+```sh
+npm run deploy
+```
+
+4. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
+  ```sh
+  # If inside the development console.
+  test
+
+  # If outside the development console..
+  truffle test
+
+  # glue script
+  npm run test
+  ```
+
+
+
+## Web development
+
+Enter `web/` folder
+
+1. Run the front-end hot reloading in `web/` (outside the truffle development console).
+    ```sh
+    // Serves the front-end on http://localhost:8080
+    npm run start
+    ```
+
+2. Build the web project for production.
+
+```sh
+npm run build
+```
+
+3. Create-react-app can run tests within src/ folder.
+
+```
+npm run test
+```
