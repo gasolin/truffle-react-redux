@@ -1,6 +1,6 @@
 # Truffle-Contracts-Web-DApp
 
-The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern and the dependencies of `contracts` and `web` frontend, and include the glue scripts to bridge both sides.
+The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern of `contracts` and `web` frontend by putting them in separate folder and include the glue scripts to handle the dependencies and bridge the both sides.
 
 * `contracts/` This project was bootstrapped with `truffle init`
 * `web/` This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
@@ -88,3 +88,18 @@ npm run build
 ```
 npm run test
 ```
+
+## Dependencies
+
+### whole project
+
+* [lerna](https://github.com/lerna/lerna#bootstrap) Manage `contracts/` and `web/` project.
+
+### contracts sub project
+
+* [truffle](http://truffleframework.com/): Build, debug, deploy the smart contracts
+
+### web sub project
+
+* [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration
+* redux & react-redux: State management
