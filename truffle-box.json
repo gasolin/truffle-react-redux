@@ -1,12 +1,12 @@
 {
   "ignore": [
     "README.md",
-    ".gitignore"
+    ".gitignore",
+    "renovate.json"
   ],
   "commands": {
-    "Compile contracts": "truffle compile",
-    "Migrate contracts": "truffle migrate",
-    "Test contracts": "truffle test"
+    "bootstrap contracts and web": "npm run bootstrap",
+    "pump packages version": "npm run publish"
   },
   "hooks": {
     "post-unpack": ""
