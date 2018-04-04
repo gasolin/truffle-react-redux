@@ -1,13 +1,18 @@
 {
   "ignore": [
-    "README.md",
     ".gitignore",
+    "box-img-lg.png",
+    "box-img-sm.png",
+    "README.md",
     "renovate.json",
     "truffle.js"
   ],
   "commands": {
-    "bootstrap contracts and web": "npm run bootstrap",
-    "pump packages version": "npm run publish"
+    "Install sub project dependencies (already ran after unpack)": "npm run bootstrap",
+    "Compile contracts": "npm run compile",
+    "Migrate contracts": "npm run migrate",
+    "Runs the web dapp in the development mode": "npm start",
+    "Pump sub project packages version": "npm run publish"
   },
   "hooks": {
     "post-unpack": "npm install && npm run bootstrap"

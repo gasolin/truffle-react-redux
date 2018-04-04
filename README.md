@@ -95,11 +95,33 @@ npm run test
 
 * [lerna](https://github.com/lerna/lerna#bootstrap) Manage `contracts/` and `web/` project.
 
+| command | description |
+|-------------|---------------|
+| bootstrap | install sub project dependencies |
+| compile  | compile contracts |
+| migrate   | migrate contracts |
+| start        | Runs the web dapp in the development mode |
+| publish   | pump sub project packages version |
+
 ### contracts sub project
 
 * [truffle](http://truffleframework.com/): Build, debug, deploy the smart contracts
+
+| command | description |
+|-------------|---------------|
+| truffle compile  | compile contracts |
+| truffle migrate   | migrate contracts |
+
+Read more in http://truffleframework.com/docs/
 
 ### web sub project
 
 * [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration
 * redux & react-redux: State management
+
+| command | description |
+|-------------|---------------|
+| npm start | Runs the app in the development mode |
+| npm test  | Launches the test runner in the interactive watch mode |
+
+Read more in https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md
