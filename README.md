@@ -1,21 +1,21 @@
-# Truffle-Contracts-Web-DApp
+# Truffle-React-Redux
 
-The `truffle-contracts-web-dapp` provide the template for your next dapp. It separate the concern of `contracts` and `web` frontend by putting them in separate folder and include the glue scripts to handle the dependencies and bridge the both sides.
+The `truffle-react-redux` provide the template(box) for your next dapp with React and Redux. The project have preconfigured React and Redux basic settings. The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
 
-* `contracts/` This project was bootstrapped with `truffle init`
+* `contracts/` This project was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command
 * `web/` This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-* glue scripts: help install dependency modules at once, help copy JSON abi from `contracts/` to `web/` project.
+* glue scripts: help manage `contracts` and  `web` sub projects by install dependency modules and copy compiled JSON into `web/` project.
 
 ## Installation
 
-1. Install Truffle and lerna globally.
+1. Install `Truffle` and `Lerna` globally.
     ```sh
     npm install -g truffle lerna
     ```
 
 2. Download the box. This also takes care of installing the necessary dependencies.
     ```sh
-    truffle unbox gasolin/truffle-contracts-web-dapp
+    truffle unbox gasolin/truffle-react-redux
     ```
 
 3. Glue script allow you to install `contracts/` and `web/` project dependencies at once via [lerna bootstrap](https://github.com/lerna/lerna#bootstrap)
@@ -23,9 +23,9 @@ The `truffle-contracts-web-dapp` provide the template for your next dapp. It sep
     ```sh
     npm run bootstrap
 
-    # or you can install dependency modules via separate command
-    $ cd contracts && npm install
-    $ cd ../web && npm install
+    # or you can install dependency modules in sub projects via separate commands
+    cd contracts && npm install
+    cd ../web && npm install
     ```
 
 
