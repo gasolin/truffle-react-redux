@@ -2,14 +2,6 @@
 
 The `truffle-react-redux` provide the template(box) for your next dapp with React and Redux. The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
 
-The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
-
-The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
-The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folder.
-
-The glue scripts also help manage `contracts` and  `web` sub projects by install dependency modules and copy compiled JSON into `web/src/lib` for accessing contracts.
-
 ## Installation
 
 1. Install `Truffle` and `Lerna` globally.
@@ -90,6 +82,18 @@ npm run build
 ```
 npm run test
 ```
+
+## What Does Truffle-React-Redux offer?
+
+The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
+
+The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folders.
+
+![Imgur](https://i.imgur.com/3KxaZ1zl.png)
+
+The glue scripts also help manage `contracts` and  `web` sub projects by install dependency modules and copy compiled JSON into `web/src/lib` for accessing contracts.
 
 ## Dependencies
 
