@@ -1,14 +1,14 @@
 {
-    "name": "truffle-dapp-contract",
-    "version": "0.1.0",
-    "description": "truffle contracts",
-    "scripts": {
-      "build": "truffle compile && shx cp -R build/contracts* ../web/src/lib",
-      "deploy": "npm run build && truffle migrate",
-      "prepare": "npm run build",
-      "test": "truffle test"
-    },
-    "dependencies": {
-      "shx": "^0.2.2"
-    }
+  "name": "truffle-dapp-contract",
+  "version": "0.1.0",
+  "description": "truffle contracts",
+  "scripts": {
+    "build": "truffle compile && shx cp -R build/contracts* ../web/src/lib",
+    "deploy": "npm run build && truffle migrate",
+    "prepare": "npm run build",
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "shx": "^0.2.2"
+  }
 }
