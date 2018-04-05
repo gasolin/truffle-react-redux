@@ -6,19 +6,19 @@
 // })
 
 import {
-  WARN_NO_WEB3_CONNECTION,
+  UPDATE_WEB3_STATUS,
 } from '../actions'
 
 const initialState = {
-  noConnection: null,
+  web3: null,
 }
 
 export default function (state = initialState, action) {
   switch (action.type) {
-    case WARN_NO_WEB3_CONNECTION:
+    case UPDATE_WEB3_STATUS:
       return {
         ...state,
-        noConnection: action.payload
+        web3: action.payload
       };
       default:
         return state;

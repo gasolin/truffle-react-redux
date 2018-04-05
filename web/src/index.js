@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { Provider } from 'react-redux'
+import Eth from 'ethjs';
+import './index.css';
 import App from './App';
 import { configureStore } from './configureStore';
 import registerServiceWorker from './registerServiceWorker';
 import {
-  warnNoWeb3Connection
+  updateWeb3Status
 } from './actions';
 
 const store = configureStore()
@@ -19,6 +20,7 @@ ReactDOM.render(
 registerServiceWorker();
 
 window.addEventListener('load', () => {
-  let hasWeb3 = typeof window.web3 === 'undefined';
-  store.dispatch(warnNoWeb3Connection(hasWeb3));
+  let hasWeb3 = typeof window.web3 !== 'undefined';
+  let web3 = hasWeb3 ? new Eth(window.web3.currentProvider) : null;
+  store.dispatch(updateWeb3Status(web3));
 });

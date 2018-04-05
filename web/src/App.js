@@ -17,7 +17,7 @@ class App extends Component {
 
 function mapState (state) {
   return {
-    noConnection: state.noConnection,
+    web3: state.web3,
   }
 }
 

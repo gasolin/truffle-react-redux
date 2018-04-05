@@ -4,11 +4,11 @@ import renderer from 'react-test-renderer'
 import Header from '../components/Header';
 
 const mockPropsNoConnection = {
-  noConnection: false
+  web3: null
 };
 
 const mockPropsConnected = {
-  noConnection: true
+  web3: new Object()
 };
 
 test('renders without crashing', () => {

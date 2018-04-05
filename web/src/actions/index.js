@@ -1,12 +1,12 @@
-export const WARN_NO_WEB3_CONNECTION = 'WARN_WEB3_CONNECTION'
+export const UPDATE_WEB3_STATUS = 'UPDATE_WEB3_STATUS'
 
 /**
  * Create an action to warn there is no web3 connection.
  * @param {boolean} payload
  */
-export function warnNoWeb3Connection (payload) {
+export function updateWeb3Status (payload) {
   return {
-    type: WARN_NO_WEB3_CONNECTION,
+    type: UPDATE_WEB3_STATUS,
     payload
   }
 }

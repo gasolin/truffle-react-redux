@@ -87,7 +87,7 @@ npm run test
 
 The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
 
-The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)).
 
 The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folders.
 
@@ -111,7 +111,7 @@ The glue scripts also help manage `contracts` and  `web` sub projects by install
 
 ### Contracts sub project
 
-* [truffle](http://truffleframework.com/): Build, debug, deploy the smart contracts
+* [truffle](http://truffleframework.com/): Build, debug, deploy the smart contracts.
 
 | command | description |
 |-------------|---------------|
@@ -122,8 +122,9 @@ Read more in http://truffleframework.com/docs/
 
 ### Web sub project
 
-* [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration
-* Redux & react-redux: State management
+* [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
+* [Redux](https://redux.js.org/basics/usage-with-react): State management.
+* [Ethjs](https://github.com/ethjs/ethjs): A highly optimised, light-weight JS utility for Ethereum. You can replace your default web3 library in `web/src/index.js`.
 
 | command | description |
 |-------------|---------------|
