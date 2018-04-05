@@ -1,6 +1,7 @@
 {
   "ignore": [
     ".gitignore",
+    ".travis.yml",
     "box-img-lg.png",
     "box-img-sm.png",
     "README.md",
