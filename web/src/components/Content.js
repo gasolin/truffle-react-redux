@@ -1,5 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
 
 export function Content (props) {
   return(
@@ -10,6 +11,6 @@ export function Content (props) {
 }
 
 Content.propTypes = {
-}
+};
 
-export default Content
+export default injectIntl(Content);

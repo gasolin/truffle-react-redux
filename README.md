@@ -89,7 +89,7 @@ npm run test
 
 The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
 
-The `web/` sub project have pre-configured React and Redux basic settings and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)).
+The `web/` sub project  was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and have pre-configured `React` and `Redux` basic settings with `react-router` and `react-intl`. You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)).
 
 The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folders.
 
@@ -127,6 +127,8 @@ Read more in http://truffleframework.com/docs/
 * [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
 * [Redux](https://redux.js.org/basics/usage-with-react): State management.
 * [Ethjs](https://github.com/ethjs/ethjs): A highly optimised, light-weight JS utility for Ethereum. You can replace your default web3 library in `web/src/index.js`.
+* [react-router](https://reacttraining.com/react-router/web/guides/philosophy): Declarative routing for React
+* [react-intl](https://github.com/yahoo/react-intl/wiki): Internationalize React apps
 
 | command | description |
 |-------------|---------------|

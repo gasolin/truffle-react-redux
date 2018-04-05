@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { injectIntl } from 'react-intl';
 
 export function Header (props) {
-  let connectionMsg = props.web3 ?
-    'Connected to the blockchain' : 'Not connect to the blockchain';
+  const intl = props.intl;
+  let web3Status = props.web3 ? 'Connected' : 'NotConnected';
   return(
     <header className="App-header">
-      <h1 className="App-title">{connectionMsg}</h1>
+      <h1 className="App-title">{intl.formatMessage({ id: web3Status })}</h1>
     </header>
   );
 }
 
 Header.propTypes = {
   web3: PropTypes.object
-}
+};
 
-export default Header
+export default injectIntl(Header);
