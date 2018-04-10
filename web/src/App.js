@@ -13,7 +13,7 @@ import Home from './components/Home';
 addLocaleData(zhHANT.data);
 addLocaleData(enUS.data);
 
-class App extends Component {
+export class App extends Component {
   getLocale =() => {
     const lang = localStorage.getItem('lang');
     switch (lang) {

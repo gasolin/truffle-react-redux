@@ -1,6 +1,8 @@
 /* global test, expect */
 import reducer from '../reducers'
-import * as types from '../actions/index'
+import {
+  UPDATE_WEB3_STATUS
+} from '../actions/actionTypes'
 
 const initBlockState = {
   web3: null
@@ -22,7 +24,7 @@ it('should handle UPDATE_WEB3_STATUS when connected', () => {
   expect(reducer(
     initBlockState,
     {
-      type: types.UPDATE_WEB3_STATUS,
+      type: UPDATE_WEB3_STATUS,
       payload: new Object()
     }
   )).toEqual(connectedBlockState)
@@ -32,7 +34,7 @@ it('should handle UPDATE_WEB3_STATUS when not connected', () => {
   expect(reducer(
     initBlockState,
     {
-      type: types.UPDATE_WEB3_STATUS,
+      type: UPDATE_WEB3_STATUS,
       payload: null
     }
   )).toEqual(notConnectedBlockState)

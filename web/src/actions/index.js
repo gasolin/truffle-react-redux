@@ -1,4 +1,6 @@
-export const UPDATE_WEB3_STATUS = 'UPDATE_WEB3_STATUS'
+import {
+  UPDATE_WEB3_STATUS
+} from './actionTypes';
 
 /**
  * Create an action to warn there is no web3 connection.

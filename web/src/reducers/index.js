@@ -7,7 +7,7 @@
 
 import {
   UPDATE_WEB3_STATUS,
-} from '../actions'
+} from '../actions/actionTypes'
 
 const initialState = {
   web3: null,

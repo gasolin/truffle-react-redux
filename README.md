@@ -126,6 +126,7 @@ Read more in http://truffleframework.com/docs/
 
 * [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
 * [Redux](https://redux.js.org/basics/usage-with-react): State management.
+* [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
 * [Ethjs](https://github.com/ethjs/ethjs): A highly optimised, light-weight JS utility for Ethereum. You can replace your default web3 library in `web/src/index.js`.
 * [react-router](https://reacttraining.com/react-router/web/guides/philosophy): Declarative routing for React
 * [react-intl](https://github.com/yahoo/react-intl/wiki): Internationalize React apps
@@ -134,5 +135,6 @@ Read more in http://truffleframework.com/docs/
 |-------------|---------------|
 | npm start | Runs the app in the development mode |
 | npm test  | Launches the test runner in the interactive watch mode |
+| npm test -- --coverage | Run test once and show the test coverage |
 
 Read more in https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md
