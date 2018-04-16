@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // locale
@@ -40,14 +39,4 @@ export class App extends Component {
   }
 }
 
-function mapState (state) {
-  return {
-    web3: state.web3,
-  };
-}
-
-function mapDispatch (dispatch) {
-  return {};
-}
-
-export default connect(mapState, mapDispatch)(App);
+export default App;

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import Header from './Header';
 import Content from './Content';
@@ -17,4 +18,14 @@ Header.propTypes = {
   web3: PropTypes.object
 };
 
-export default Home;
+function mapState (state) {
+  return {
+    web3: state.web3,
+  };
+}
+
+function mapDispatch (dispatch) {
+  return {};
+}
+
+export default connect(mapState, mapDispatch)(Home);
