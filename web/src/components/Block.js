@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 
-export function Header (props) {
+export function Block (props) {
   const intl = props.intl;
   let web3Status = props.web3 ? 'Connected' : 'NotConnected';
   return(
@@ -12,8 +12,8 @@ export function Header (props) {
   );
 }
 
-Header.propTypes = {
+Block.propTypes = {
   web3: PropTypes.object
 };
 
-export default injectIntl(Header);
+export default injectIntl(Block);

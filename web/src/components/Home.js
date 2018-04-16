@@ -2,13 +2,13 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import Header from './Header';
+import Block from './Block';
 import Content from './Content';
 
 export function Home (props) {
   return(
     <Fragment>
-      <Header {...props} />
+      <Block {...props} />
       <Content {...props} />
     </Fragment>
   );
