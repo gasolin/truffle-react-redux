@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 import Header from './Header';
@@ -6,10 +6,10 @@ import Content from './Content';
 
 export function Home (props) {
   return(
-    <div className="App">
-    <Header {...props} />
-    <Content {...props} />
-    </div>
+    <Fragment>
+      <Header {...props} />
+      <Content {...props} />
+    </Fragment>
   );
 }
 

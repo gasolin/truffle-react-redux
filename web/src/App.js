@@ -9,6 +9,7 @@ import zhHANT from './locales/zh-Hant';
 
 import './App.css';
 import Home from './components/Home';
+// import Counter from './components/Counter';
 
 addLocaleData(zhHANT.data);
 addLocaleData(enUS.data);
@@ -28,9 +29,12 @@ export class App extends Component {
     const locale = this.getLocale();
     return (
       <IntlProvider locale={locale.locale} messages={locale.messages}>
-      <Router basename="/">
-        <Route exact path="/" component={Home} />
-      </Router>
+        <Router basename="/">
+          <div className="App">
+            <Route exact path="/" component={Home} />
+            {/* <Route path="/counter" componet={Counter} /> */}
+          </div>
+        </Router>
       </IntlProvider>
     );
   }
