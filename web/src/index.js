@@ -20,6 +20,7 @@ ReactDOM.render(
 registerServiceWorker();
 
 window.addEventListener('load', () => {
+  // could remove and only use lib/web3utils
   let hasWeb3 = typeof window.web3 !== 'undefined';
   let web3 = hasWeb3 ? new Eth(window.web3.currentProvider) : null;
   store.dispatch(updateWeb3Status(web3));

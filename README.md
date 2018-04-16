@@ -2,7 +2,7 @@
 
 [![travis](https://travis-ci.org/gasolin/truffle-react-redux.svg?branch=master)](https://travis-ci.org/gasolin/truffle-react-redux)
 
-The `truffle-react-redux` provide the template(box) for your next dapp with React and Redux. The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
+The `truffle-react-redux` provide the template(box) for your next dapp with React (and Redux, Route, Internationalization). The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
 
 ## Installation
 
@@ -89,7 +89,7 @@ npm run test
 
 The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
 
-The `web/` sub project  was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and have pre-configured `React` and `Redux` basic settings with `react-router` and `react-intl`. You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)).
+The `web/` sub project  was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and have pre-configured `React` and `Redux` basic settings with `react-router` and `react-intl`. You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)), or use `lib/web3utils` directly without redux state.
 
 The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folders.
 
