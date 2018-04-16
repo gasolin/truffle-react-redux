@@ -1,5 +1,5 @@
 /* global test, expect */
-import reducer from '../reducers'
+import { web3Reducer as reducer } from '../reducers/web3'
 import {
   UPDATE_WEB3_STATUS
 } from '../actions/actionTypes'

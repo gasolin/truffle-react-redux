@@ -14,13 +14,13 @@ export function Home (props) {
   );
 }
 
-Header.propTypes = {
+Home.propTypes = {
   web3: PropTypes.object
 };
 
 function mapState (state) {
   return {
-    web3: state.web3,
+    web3: state.web3.web3,
   };
 }
 

@@ -1,26 +1,6 @@
-// import {combineReducers} from 'redux'
-// import {blockReducer} from './blocks'
+import { combineReducers } from 'redux';
+import { web3Reducer } from './web3';
 
-// export default combineReducers({
-//   blocks: blockReducer
-// })
-
-import {
-  UPDATE_WEB3_STATUS,
-} from '../actions/actionTypes'
-
-const initialState = {
-  web3: null,
-}
-
-export default function (state = initialState, action) {
-  switch (action.type) {
-    case UPDATE_WEB3_STATUS:
-      return {
-        ...state,
-        web3: action.payload
-      };
-      default:
-        return state;
-  }
-}
+export default combineReducers({
+  web3: web3Reducer
+});
