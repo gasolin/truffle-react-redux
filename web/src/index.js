@@ -5,10 +5,8 @@ import Eth from 'ethjs';
 import './index.css';
 import App from './App';
 import { configureStore } from './configureStore';
+import { updateWeb3Status } from './actions';
 import registerServiceWorker from './registerServiceWorker';
-import {
-  updateWeb3Status
-} from './actions';
 
 const store = configureStore()
 

@@ -5,6 +5,10 @@
   "pinVersions": false,
   "packageFiles": [
     {
+      "packageFile": "package.json",
+      "pinVersions": false
+    },
+    {
       "packageFile": "contracts/package.json",
       "pinVersions": false
     },
