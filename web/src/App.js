@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // locale
 import { addLocaleData, IntlProvider } from 'react-intl';
@@ -7,6 +7,7 @@ import enUS from './locales/en-US';
 import zhHANT from './locales/zh-Hant';
 
 import './App.css';
+import NoMatch from './components/NoMatch';
 import Home from './components/Home';
 // import Counter from './components/Counter';
 
@@ -30,8 +31,11 @@ export class App extends Component {
       <IntlProvider locale={locale.locale} messages={locale.messages}>
         <Router basename="/">
           <div className="App">
-            <Route exact path="/" component={Home} />
-            {/* <Route path="/counter" componet={Counter} /> */}
+            <Switch>
+              <Route exact path="/" component={Home} />
+              {/* <Route path="/counter" component={Counter} /> */}
+              <Route component={NoMatch} />
+            </Switch>
           </div>
         </Router>
       </IntlProvider>
