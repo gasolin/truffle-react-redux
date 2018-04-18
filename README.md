@@ -16,7 +16,7 @@ The `truffle-react-redux` provide the template(box) for your next dapp with Reac
     truffle unbox gasolin/truffle-react-redux
     ```
 
-3. Glue script allow you to install `contracts/` and `web/` project dependencies at once via [lerna bootstrap](https://github.com/lerna/lerna#bootstrap)
+3. (Done automatically after unbox) Glue script can help you to install `contracts/` and `web/` project dependencies at once via [lerna bootstrap](https://github.com/lerna/lerna#bootstrap)
 
     ```sh
     npm run bootstrap
