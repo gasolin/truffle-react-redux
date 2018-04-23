@@ -8,8 +8,8 @@ import zhHANT from './locales/zh-Hant';
 
 import './App.css';
 import NoMatch from './components/NoMatch';
-import Home from './components/Home';
-// import Counter from './components/Counter';
+import Home from './containers/Home';
+// import Counter from './components/About';
 
 addLocaleData(zhHANT.data);
 addLocaleData(enUS.data);
@@ -33,7 +33,7 @@ export class App extends Component {
           <div className="App">
             <Switch>
               <Route exact path="/" component={Home} />
-              {/* <Route path="/counter" component={Counter} /> */}
+              {/* <Route path="/about" component={About} /> */}
               <Route component={NoMatch} />
             </Switch>
           </div>
