@@ -4,11 +4,9 @@ import { Provider } from 'react-redux'
 import Eth from 'ethjs';
 import './index.css';
 import App from './App';
-import { configureStore } from './configureStore';
+import { store } from './store';
 import { updateWeb3Status } from './actions';
 import registerServiceWorker from './registerServiceWorker';
-
-const store = configureStore()
 
 ReactDOM.render(
   <Provider store={store}>

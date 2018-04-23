@@ -130,6 +130,7 @@ Read more in http://truffleframework.com/docs/
 * [Ethjs](https://github.com/ethjs/ethjs): A highly optimised, light-weight JS utility for Ethereum. You can replace your default web3 library in `web/src/index.js`.
 * [react-router](https://reacttraining.com/react-router/web/guides/philosophy): Declarative routing for React
 * [react-intl](https://github.com/yahoo/react-intl/wiki): Internationalize React apps
+* [redux-logger](https://github.com/evgenyrodionov/redux-logger) Logger (middleware) for Redux in development
 
 | command | description |
 |-------------|---------------|
