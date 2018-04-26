@@ -4,8 +4,8 @@ import { Provider } from 'react-redux'
 import Eth from 'ethjs';
 import './index.css';
 import App from './App';
-import { store } from './store';
-import { updateWeb3Status } from './actions';
+import { store } from './state/store';
+import { updateWeb3Status } from './state/web3/actions';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(

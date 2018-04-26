@@ -1,6 +1,6 @@
 import {
   UPDATE_WEB3_STATUS
-} from './actionTypes';
+} from './types';
 
 /**
  * Create an action to warn there is no web3 connection.

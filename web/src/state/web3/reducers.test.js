@@ -1,8 +1,6 @@
 /* global test, expect */
-import { web3Reducer as reducer } from '../reducers/web3'
-import {
-  UPDATE_WEB3_STATUS
-} from '../actions/actionTypes'
+import { web3Reducer as reducer } from './reducers';
+import { UPDATE_WEB3_STATUS } from './types';
 
 const initBlockState = {
   web3: null
@@ -27,7 +25,7 @@ it('should handle UPDATE_WEB3_STATUS when connected', () => {
       type: UPDATE_WEB3_STATUS,
       payload: new Object()
     }
-  )).toEqual(connectedBlockState)
+  )).toEqual(connectedBlockState);
 })
 
 it('should handle UPDATE_WEB3_STATUS when not connected', () => {
@@ -37,5 +35,5 @@ it('should handle UPDATE_WEB3_STATUS when not connected', () => {
       type: UPDATE_WEB3_STATUS,
       payload: null
     }
-  )).toEqual(notConnectedBlockState)
+  )).toEqual(notConnectedBlockState);
 });

@@ -3,7 +3,7 @@ import {
   applyMiddleware,
   compose
 } from 'redux';
-import reducer from './reducers';
+import reducer from './reducer';
 // import thunkMiddleware from 'redux-thunk';
 
 function configureStore (deps = {}) {
