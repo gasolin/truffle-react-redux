@@ -1,21 +1,17 @@
 /* global test, expect */
-import {
-  UPDATE_WEB3_STATUS
-} from './types';
-import {
-  updateWeb3Status
-} from './actions';
+import * as types from './types'
+import * as actions from './actions'
 
 test('should create an action to update web3 status', () => {
   const expectedAction = {
-    type: UPDATE_WEB3_STATUS,
-    payload: new Object()
+    type: types.UPDATE_WEB3_STATUS,
+    payload: {}
   };
-  expect(updateWeb3Status(new Object())).toEqual(expectedAction);
+  expect(actions.updateWeb3Status({})).toEqual(expectedAction);
 
   const expectedNoConnectionAction = {
-    type: UPDATE_WEB3_STATUS,
+    type: types.UPDATE_WEB3_STATUS,
     payload: null
   };
-  expect(updateWeb3Status(null)).toEqual(expectedNoConnectionAction);
+  expect(actions.updateWeb3Status(null)).toEqual(expectedNoConnectionAction);
 });

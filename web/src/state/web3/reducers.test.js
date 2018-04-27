@@ -1,13 +1,13 @@
 /* global test, expect */
 import { web3Reducer as reducer } from './reducers';
-import { UPDATE_WEB3_STATUS } from './types';
+import * as types from './types';
 
 const initBlockState = {
   web3: null
 };
 
 const connectedBlockState = {
-  web3: new Object()
+  web3: {}
 };
 
 const notConnectedBlockState = {
@@ -22,8 +22,8 @@ it('should handle UPDATE_WEB3_STATUS when connected', () => {
   expect(reducer(
     initBlockState,
     {
-      type: UPDATE_WEB3_STATUS,
-      payload: new Object()
+      type: types.UPDATE_WEB3_STATUS,
+      payload: {}
     }
   )).toEqual(connectedBlockState);
 })
@@ -32,7 +32,7 @@ it('should handle UPDATE_WEB3_STATUS when not connected', () => {
   expect(reducer(
     initBlockState,
     {
-      type: UPDATE_WEB3_STATUS,
+      type: types.UPDATE_WEB3_STATUS,
       payload: null
     }
   )).toEqual(notConnectedBlockState);
