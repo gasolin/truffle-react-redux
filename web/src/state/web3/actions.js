@@ -10,5 +10,5 @@ export function updateWeb3Status (payload) {
   return {
     type: UPDATE_WEB3_STATUS,
     payload
-  }
+  };
 }

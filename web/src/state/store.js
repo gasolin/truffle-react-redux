@@ -16,12 +16,12 @@ function configureStore (deps = {}) {
     middleware.push(require('redux-logger').createLogger());
   }
 
-return createStore(
+  return createStore(
     reducer,
     composeEnhancers(
       applyMiddleware(...middleware)
     )
-  )
+  );
 }
 
 const store = configureStore();

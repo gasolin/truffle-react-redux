@@ -1,7 +1,7 @@
 // ethjs wrap
 import Eth from 'ethjs';
 
-let web3 = null
+let web3 = null;
 let accounts = [];
 let waitForReceipt = undefined;
 
@@ -32,7 +32,7 @@ if (typeof window.web3 !== 'undefined') {
     }).catch(err => {
       console.error(err);
     });
-  }
+  };
 } else {
   console.error('No web3? You should consider trying MetaMask!');
 }

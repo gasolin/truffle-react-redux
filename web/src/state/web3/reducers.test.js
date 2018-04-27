@@ -18,7 +18,7 @@ test('should return the initial state', () => {
   expect(reducer(undefined, {})).toEqual(initBlockState);
 });
 
-it('should handle UPDATE_WEB3_STATUS when connected', () => {
+test('should handle UPDATE_WEB3_STATUS when connected', () => {
   expect(reducer(
     initBlockState,
     {
@@ -26,9 +26,9 @@ it('should handle UPDATE_WEB3_STATUS when connected', () => {
       payload: {}
     }
   )).toEqual(connectedBlockState);
-})
+});
 
-it('should handle UPDATE_WEB3_STATUS when not connected', () => {
+test('should handle UPDATE_WEB3_STATUS when not connected', () => {
   expect(reducer(
     initBlockState,
     {

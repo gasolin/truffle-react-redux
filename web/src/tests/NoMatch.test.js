@@ -13,7 +13,7 @@ test('renders without crashing', () => {
 });
 
 test('render correctly', () => {
-  const component = rendererCreateWithIntl(<NoMatch />)
+  const component = rendererCreateWithIntl(<NoMatch />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

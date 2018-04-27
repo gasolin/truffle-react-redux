@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer'
+import renderer from 'react-test-renderer';
 import { addLocaleData, IntlProvider } from 'react-intl';
 
 import locale from '../locales/en-US';

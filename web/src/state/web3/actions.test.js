@@ -1,6 +1,6 @@
 /* global test, expect */
-import * as types from './types'
-import * as actions from './actions'
+import * as types from './types';
+import * as actions from './actions';
 
 test('should create an action to update web3 status', () => {
   const expectedAction = {

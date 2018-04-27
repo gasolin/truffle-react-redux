@@ -1,5 +1,5 @@
-import appLocaleData from 'react-intl/locale-data/en'
-import enMessages from './en-US.messages.json'
+import appLocaleData from 'react-intl/locale-data/en';
+import enMessages from './en-US.messages.json';
 
 export default {
   messages: {

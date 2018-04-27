@@ -21,13 +21,13 @@ test('renders without crashing', () => {
 });
 
 test('render correctly when no web3 connection', () => {
-  const component = rendererCreateWithIntl(<Block {...mockPropsNoConnection} />)
+  const component = rendererCreateWithIntl(<Block {...mockPropsNoConnection} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 test('render correctly with web3 connection', () => {
-  const component = rendererCreateWithIntl(<Block {...mockPropsConnected} />)
+  const component = rendererCreateWithIntl(<Block {...mockPropsConnected} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
