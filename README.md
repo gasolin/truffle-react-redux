@@ -1,6 +1,7 @@
 # Truffle-React-Redux
 
-[![travis](https://travis-ci.org/gasolin/truffle-react-redux.svg?branch=master)](https://travis-ci.org/gasolin/truffle-react-redux)
+[![travis](https://travis-ci.org/gasolin/truffle-react-redux.svg?branch=master)](https://travis-ci.org/gasolin/truffle-react-redux) [![](https://img.shields.io/badge/💵-Tip_Me-brightgreen.svg)](https://gitcoin.co/tip?username=gasolin)
+
 
 The `truffle-react-redux` provide the template(box) for your next dapp with React (and Redux, Route, Internationalization). The template separate the concern of `contracts` and `web` frontend as sub projects and include glue scripts to bridge the both sides.
 
@@ -139,3 +140,8 @@ Read more in http://truffleframework.com/docs/
 | npm test -- --coverage | Run test once and show the test coverage |
 
 Read more in https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md
+
+
+### Support Developer Team
+
+If `truffle-react-redux` made your life easier and you like it and want to help us improve it further or if you want to speed up new features, please, support us with a tip. We appreciate all contributions!
