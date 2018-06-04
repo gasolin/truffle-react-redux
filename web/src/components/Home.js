@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import Block from './Block';
 import Content from './Content';
 
-export function Home (props) {
-  return(
+export function Home(props) {
+  return (
     <Fragment>
       <Block {...props} />
       <Content {...props} />
@@ -14,7 +14,7 @@ export function Home (props) {
 }
 
 Home.propTypes = {
-  web3: PropTypes.object
+  web3: PropTypes.object,
 };
 
 export default Home;

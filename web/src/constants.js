@@ -1,1 +1,3 @@
-export const CONTRACT_ADDRESS = "<specify the contract address>";
+export default {
+  CONTRACT_ADDRESS: '<specify the contract address>',
+};

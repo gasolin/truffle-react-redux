@@ -2,13 +2,13 @@ import { connect } from 'react-redux';
 
 import Home from '../components/Home';
 
-function mapState (state) {
+function mapState(state) {
   return {
     web3: state.web3.web3,
   };
 }
 
-function mapDispatch (dispatch) {
+function mapDispatch(/* dispatch */) {
   return {};
 }
 

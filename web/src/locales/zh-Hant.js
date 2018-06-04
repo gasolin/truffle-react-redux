@@ -7,4 +7,4 @@ export default {
   },
   locale: 'zh-Hant-TW',
   data: appLocaleData,
-}
+};

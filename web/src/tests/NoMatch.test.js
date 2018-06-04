@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import NoMatch from '../components/NoMatch';
 import {
   renderWithIntl,
-  rendererCreateWithIntl
+  rendererCreateWithIntl,
 } from './helper';
 
 test('renders without crashing', () => {
@@ -14,6 +14,6 @@ test('renders without crashing', () => {
 
 test('render correctly', () => {
   const component = rendererCreateWithIntl(<NoMatch />);
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { injectIntl } from 'react-intl';
 
-export function Block (props) {
-  const intl = props.intl;
-  let web3Status = props.web3 ? 'Connected' : 'NotConnected';
-  return(
+export function Block(props) {
+  const {
+    intl,
+    web3 = null,
+  } = props;
+  const web3Status = web3 ? 'Connected' : 'NotConnected';
+  return (
     <header className="App-header">
       <h1 className="App-title">{intl.formatMessage({ id: web3Status })}</h1>
     </header>
@@ -13,7 +16,8 @@ export function Block (props) {
 }
 
 Block.propTypes = {
-  web3: PropTypes.object
+  web3: PropTypes.object,
+  intl: PropTypes.object.isRequired,
 };
 
 export default injectIntl(Block);

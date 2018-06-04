@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "ethjs": "^0.4.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-intl": "^2.4.0",
@@ -13,6 +14,11 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
     "react-scripts": "^1.1.4",
     "react-test-renderer": "^16.3.1",
     "redux-logger": "^3.0.6"
@@ -21,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "lint": "eslint src --ignore-path .gitignore",
+    "lint-fix": "eslint src --fix --ignore-path .gitignore"
   }
 }

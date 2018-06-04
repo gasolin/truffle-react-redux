@@ -7,4 +7,4 @@ export default {
   },
   locale: 'en-US',
   data: appLocaleData,
-}
+};
