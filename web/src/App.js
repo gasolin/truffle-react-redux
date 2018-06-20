@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
-import { getLocale } from 'locales'
+import { getLocale } from 'locales';
 
 import './App.css';
 import NoMatch from './components/NoMatch';

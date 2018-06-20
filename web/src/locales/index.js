@@ -1,22 +1,22 @@
-import { addLocaleData } from 'react-intl'
-import enUS from './en-US'
-import zhHANT from './zh-Hant'
+import { addLocaleData } from 'react-intl';
+import enUS from './en-US';
+import zhHANT from './zh-Hant';
 
-addLocaleData(enUS.data)
-addLocaleData(zhHANT.data)
+addLocaleData(enUS.data);
+addLocaleData(zhHANT.data);
 
 export const getLocale = () => {
-  const lang = localStorage.getItem('lang')
+  const lang = localStorage.getItem('lang');
   switch (lang) {
     case 'tw':
-      return zhHANT
+      return zhHANT;
     case 'en':
-      return enUS
+      return enUS;
     default:
-      return enUS
+      return enUS;
   }
-}
+};
 
 export default {
   getLocale,
-}
+};

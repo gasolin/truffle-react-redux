@@ -20,4 +20,8 @@ Block.propTypes = {
   intl: PropTypes.object.isRequired,
 };
 
+Block.defaultProps = {
+  web3: null,
+};
+
 export default injectIntl(Block);
