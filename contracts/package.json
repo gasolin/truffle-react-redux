@@ -9,6 +9,6 @@
     "test": "truffle test"
   },
   "dependencies": {
-    "shx": "^0.2.2"
+    "shx": "^0.3.0"
   }
 }
