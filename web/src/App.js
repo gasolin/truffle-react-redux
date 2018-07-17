@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
-import { getLocale } from 'locales';
 
 import './App.css';
+import { getLocale } from './locales';
 import NoMatch from './components/NoMatch';
 import Home from './containers/Home';
 // import Counter from './components/About';
