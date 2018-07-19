@@ -14,20 +14,19 @@ export function renderWithIntl(element, root) {
   const instance = ReactDOM.render(
     <IntlProvider locale={locale.locale} messages={locale.messages}>
       {React.cloneElement(element)}
-    </IntlProvider>
-    , root,
+    </IntlProvider>,
+    root,
   );
 
   return instance;
 }
 
 export function rendererCreateWithIntl(element) {
-  /* eslint-disable react/jsx-closing-tag-location, comma-dangle, function-paren-newline */
-  const instance = renderer.create(<IntlProvider locale={locale.locale} messages={locale.messages}>
-    {React.cloneElement(element)}
-  </IntlProvider>
+  const instance = renderer.create(
+    <IntlProvider locale={locale.locale} messages={locale.messages}>
+      {React.cloneElement(element)}
+    </IntlProvider>,
   );
-  /* eslint-enable react/jsx-closing-tag-location, comma-dangle, function-paren-newline */
 
   return instance;
 }

@@ -10,7 +10,9 @@ export function Block(props) {
   const web3Status = web3 ? 'Connected' : 'NotConnected';
   return (
     <header className="App-header">
-      <h1 className="App-title">{intl.formatMessage({ id: web3Status })}</h1>
+      <h1 className="App-title">
+        {intl.formatMessage({ id: web3Status })}
+      </h1>
     </header>
   );
 }
