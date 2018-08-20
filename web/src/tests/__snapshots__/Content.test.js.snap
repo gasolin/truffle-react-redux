@@ -4,10 +4,10 @@ exports[`render correctly 1`] = `
 <p
   className="App-intro"
 >
-  To get started, edit 
+  To get started, edit  
   <code>
     src/App.js
   </code>
-   and save to reload.
+    and save to reload.
 </p>
 `;
