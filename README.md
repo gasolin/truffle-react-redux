@@ -99,7 +99,7 @@ npm run test
 
 The `contracts/` sub project contain normal contracts and was bootstrapped with [truffle init](http://truffleframework.com/docs/getting_started/project) command.
 
-The `web/` sub project  was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and have pre-configured `React` and `Redux` basic settings with `react-router` and `react-intl`. You can access the blockchain via pre-configured redux `state.web3` (via [Ethjs](https://github.com/ethjs/ethjs)), or use `lib/web3utils` directly without redux state.
+The `web/` sub project  was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) and have pre-configured `React` and `Redux` basic settings with `react-router` and `react-intl`. You can access the blockchain via pre-configured redux `state.web3`, `state.accounts`, `state.contracts`, `state.transactions` (via [drizzle](https://truffleframework.com/docs/drizzle/reference/drizzle-state)), or use `lib/web3utils` directly without redux state.
 
 The template provide top level scripts so you can compile and deploy contracts via `npm run compile`, `npm run migrate` commands, or run the app in the development mode via `npm start` command without enter the sub project folders.
 
@@ -116,6 +116,7 @@ The glue scripts also help manage `contracts` and  `web` sub projects by install
 | command | description |
 |-------------|---------------|
 | bootstrap | install sub project dependencies |
+| chain       | run a test chain |
 | compile  | compile contracts |
 | migrate   | migrate contracts |
 | start        | Runs the web dapp in the development mode |
@@ -137,7 +138,7 @@ Read more in http://truffleframework.com/docs/
 * [Create React App](https://github.com/facebookincubator/create-react-app): Create React apps with no build configuration.
 * [Redux](https://redux.js.org/basics/usage-with-react): State management.
 * [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension)
-* [Ethjs](https://github.com/ethjs/ethjs): A highly optimised, light-weight JS utility for Ethereum. You can replace your default web3 library in `web/src/index.js`.
+* [drizzle](https://truffleframework.com/docs/drizzle/): Redux store for web3 and smart contracts. Maintains access to underlying functionality ex: Web3 and your contract's methods.
 * [react-router](https://reacttraining.com/react-router/web/guides/philosophy): Declarative routing for React
 * [react-intl](https://github.com/yahoo/react-intl/wiki): Internationalize React apps
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger) Logger (middleware) for Redux in development

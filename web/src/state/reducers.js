@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { web3Reducer } from './web3/reducers';
+import { drizzleReducers } from 'drizzle'
 
 export default combineReducers({
-  web3: web3Reducer,
+  ...drizzleReducers,
 });

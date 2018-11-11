@@ -5,7 +5,7 @@ import { IntlProvider } from 'react-intl';
 import './App.css';
 import { getLocale } from './locales';
 import NoMatch from './components/NoMatch';
-import Home from './containers/Home';
+import Home from './components/Home';
 // import Counter from './components/About';
 
 function App() {

@@ -1,4 +1,6 @@
 {
+  "name": "truffle-react-redux",
+  "version": "0.2.0",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "chain": "cd contracts && npm run chain",
@@ -7,7 +9,7 @@
     "start": "cd web && npm start",
     "publish": "lerna publish"
   },
-	"devDependencies": {
-		"lerna": "^3.4.3"
-	}
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
 }

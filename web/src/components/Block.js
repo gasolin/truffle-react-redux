@@ -4,14 +4,16 @@ import { injectIntl } from 'react-intl';
 
 export function Block(props) {
   const {
+    drizzleStatus,
     intl,
     web3 = null,
   } = props;
-  const web3Status = web3 ? 'Connected' : 'NotConnected';
+  const web3Status = web3.status === 'failed' ? 'NotConnected' : 'Connected';
   return (
     <header className="App-header">
       <h1 className="App-title">
-        {intl.formatMessage({ id: web3Status })}
+        {intl.formatMessage({ id: web3Status })} <br/>
+        Drizzle is {drizzleStatus.initialized ? 'initialized' : 'not initialized'}
       </h1>
     </header>
   );
