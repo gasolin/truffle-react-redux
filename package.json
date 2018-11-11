@@ -1,12 +1,13 @@
 {
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "chain": "cd contracts && npm run chain",
     "compile": "cd contracts && npm run build",
     "migrate": "cd contracts && npm run deploy",
     "start": "cd web && npm start",
     "publish": "lerna publish"
   },
 	"devDependencies": {
-		"lerna": "^3.0.0"
+		"lerna": "^3.4.3"
 	}
 }

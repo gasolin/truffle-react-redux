@@ -6,9 +6,10 @@
     "build": "truffle compile && shx cp -R build/contracts* ../web/src/lib",
     "deploy": "npm run build && truffle migrate",
     "prepare": "npm run build",
-    "test": "truffle test"
+    "test": "truffle test",
+    "chain": "ganache-cli -b 3 -s apple banana cherry"
   },
   "dependencies": {
-    "shx": "^0.3.0"
+    "shx": "^0.3.2"
   }
 }
