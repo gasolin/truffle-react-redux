@@ -7,11 +7,21 @@ import {
 } from './helper';
 
 const mockPropsNoConnection = {
-  web3: null,
+  drizzleStatus: {
+    initialized: false,
+  },
+  web3: {
+    status: 'failed',
+  },
 };
 
 const mockPropsConnected = {
-  web3: {},
+  drizzleStatus: {
+    initialized: true,
+  },
+  web3: {
+    status: true,
+  },
 };
 
 test('renders without crashing', () => {

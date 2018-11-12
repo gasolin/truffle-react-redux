@@ -8,6 +8,10 @@ exports[`render correctly when no web3 connection 1`] = `
     className="App-title"
   >
     Not connect to the blockchain
+     
+    <br />
+    Drizzle is 
+    not initialized
   </h1>
 </header>
 `;
@@ -20,6 +24,10 @@ exports[`render correctly with web3 connection 1`] = `
     className="App-title"
   >
     Connected to the blockchain
+     
+    <br />
+    Drizzle is 
+    initialized
   </h1>
 </header>
 `;
