@@ -6,9 +6,9 @@ export function Block(props) {
   const {
     drizzleStatus,
     intl,
-    web3 = null,
+    web3,
   } = props;
-  const web3Status = web3.status === 'failed' ? 'NotConnected' : 'Connected';
+  const web3Status = web3 && web3.status !== 'failed' ? 'Connected' : 'NotConnected';
   return (
     <header className="App-header">
       <h1 className="App-title">
