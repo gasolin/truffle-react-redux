@@ -10,6 +10,6 @@
     "publish": "lerna publish"
   },
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^4.0.0"
   }
 }
